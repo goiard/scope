@@ -1,8 +1,8 @@
-# SCOPE — Students' SCOPE v0.4
+# scope , version 1.0
 
 A local-first student workspace designed around European school systems.
 
-## v0.4 polish
+## v1.0 
 
 - Cleaner categorized navigation
 - Inline SVG interface icons
@@ -29,7 +29,7 @@ Then open `http://localhost:8080`.
 
 ## Storage
 
-SCOPE stores its workspace locally in browser storage. Use Settings → Export JSON for backups.
+scope stores its workspace locally in browser storage. Use Settings → Export JSON for backups.
 
 ## Supported education profiles
 
