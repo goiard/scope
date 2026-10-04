@@ -1,7 +1,5 @@
 # scope
 
-# SCOPE
-
 ### Students' scope
 
 scope is a modern, all-in-one student workspace. I made this with ChatGPT. It's the first version and I will improve it alot in the next few weeks.
