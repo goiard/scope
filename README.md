@@ -1,37 +1,59 @@
 # SCOPE
 
-> A focused, local-first workspace for students to organize school, studying and progress.
+> 🎓 A focused, local-first workspace for students to organize school, studying and progress.
 
-SCOPE is a dependency-light static web app built with semantic HTML, CSS and vanilla JavaScript. It keeps academic data in the browser and gives students one place for subjects, grades, exams, study sessions, focus time and insights.
+<div align="center">
 
-## Features
+**A clean student dashboard for grades, exams, planning, focus and insights — without accounts, subscriptions or a backend.**
 
-- **Dashboard** — current average, next exam, daily plan and focus activity
-- **Subjects** — teachers, target grades and course overview
-- **Grades** — weighted grade tracking and average calculation
-- **Exams** — upcoming assessments with difficulty indicators
-- **Planner** — generate repeatable study sessions around a topic
-- **Focus** — Pomodoro, Deep Work and 52/17 timers with session history
-- **Quizzes** — lightweight practice-set tracking
-- **Analytics** — focus time, completion and subject performance
-- **Calendar** — exams and planned sessions in a monthly view
-- **Profiles** — country-aware school types and year labels
-- **Themes** — light and dark modes
-- **Data tools** — JSON export/import and full local reset
-- **Responsive UI** — desktop sidebar and mobile navigation
-- **Accessibility-minded UI** — keyboard-friendly controls and reduced-motion support
+<img src="assets/dashboard-preview.webp" alt="SCOPE dashboard preview" width="100%">
 
-## Privacy
+</div>
 
-SCOPE is local-first. Your workspace is stored in browser local storage and there is no SCOPE backend collecting your academic data.
+## ✨ What is SCOPE?
 
-Use **Settings → Export** to create a JSON backup. Use **Settings → Import** to restore one.
+SCOPE brings the parts of student life that usually live in different apps into one simple workspace.
 
-> Note: browser storage can be cleared by the browser or device. Keep an exported backup if your data matters.
+It is built with semantic HTML, modern CSS and vanilla JavaScript, with academic data stored locally in your browser.
 
-## Run locally
+### 🧩 Everything in one workspace
+
+| | Feature | What it does |
+|---|---|---|
+| 📊 | **Dashboard** | See your average, exams, study activity and today's plan at a glance |
+| 📚 | **Subjects** | Manage courses, teachers and target grades |
+| 📝 | **Grades** | Track grades and weighted averages |
+| 📅 | **Exams** | Keep upcoming assessments and difficulty in one place |
+| 🗓️ | **Planner** | Turn topics into structured study sessions |
+| ⏱️ | **Focus** | Use Pomodoro, Deep Work or 52/17 sessions |
+| 🧠 | **Quizzes** | Track practice and quiz performance |
+| 📈 | **Analytics** | Understand focus time, completion and subject performance |
+| 🗓️ | **Calendar** | View exams and planned study sessions by month |
+| 🌍 | **Profiles** | Configure country, school type and year labels |
+| 🌓 | **Themes** | Switch between light and dark modes |
+| 💾 | **Data tools** | Export, import or reset your local workspace |
+
+## 🔒 Privacy first
+
+SCOPE is **local-first**.
+
+- 🔐 Your academic data stays in your browser.
+- 🚫 There is no SCOPE backend collecting your data.
+- 💾 Export your workspace as JSON whenever you want.
+- ♻️ Import a previous backup to restore it.
+- ⚠️ Browser storage can still be cleared by the browser or device, so keep a backup if your data matters.
+
+## 🛠️ Built with
+
+- **HTML5** — semantic structure
+- **CSS3** — responsive UI, animations and themes
+- **Vanilla JavaScript** — application logic without a large framework
+- **localStorage** — local-first data persistence
+- **GitHub Actions** — automated GitHub Pages deployment
 
 No Node.js, package manager or build step is required.
+
+## 🚀 Run locally
 
 ```bash
 git clone https://github.com/goiard/scope.git
@@ -43,11 +65,12 @@ Then open **http://localhost:8080**.
 
 You can also open `index.html` directly, although a local HTTP server is recommended for development.
 
-## Project structure
+## 📁 Project structure
 
 ```text
 scope/
 ├── assets/
+│   ├── dashboard-preview.webp
 │   └── icon.svg
 ├── css/
 │   └── style.css
@@ -62,34 +85,51 @@ scope/
 └── README.md
 ```
 
-## GitHub Pages
+## 🌐 GitHub Pages
 
-SCOPE is ready to deploy as a static GitHub Pages site. The repository includes a GitHub Actions workflow that publishes the site after pushes to `main`.
+SCOPE is ready for static GitHub Pages hosting.
 
-In GitHub, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. GitHub's current Pages workflow uses the Pages configuration, artifact upload and deployment actions for this setup. 
+The repository includes a GitHub Actions workflow that deploys the site after pushes to `main`.
 
-## Development principles
+To enable it:
 
-SCOPE deliberately avoids a large framework for a small static application.
+**Settings → Pages → Build and deployment → Source → GitHub Actions**
+
+## 🎯 Development principles
+
+SCOPE deliberately stays dependency-light.
 
 - Keep dependencies close to zero.
-- Keep UI components reusable and predictable.
+- Keep the interface clean and predictable.
 - Prefer semantic HTML and accessible controls.
-- Keep data local unless a future feature explicitly requires a backend.
+- Keep academic data local unless a future feature explicitly needs a backend.
 - Avoid unnecessary visual noise, gradients and decorative effects.
-- Keep interactions fast on low-end devices.
+- Keep interactions fast on lower-end devices.
+- Respect reduced-motion preferences.
 
-## Contributing
+## 🤝 Contributing
+
+Contributions are welcome.
 
 1. Fork the repository.
 2. Create a focused branch.
 3. Make the smallest coherent change.
-4. Test the app locally in a current Chromium/Firefox/Safari browser.
+4. Test locally in a current Chromium, Firefox or Safari browser.
 5. Check desktop and mobile layouts.
-6. Open a pull request with a concise explanation of the change.
+6. Open a pull request with a concise explanation.
 
-## License
+## 📄 License
 
-SCOPE is licensed under the **MIT License**. See [LICENSE](LICENSE).
+SCOPE is licensed under the **MIT License**.
+
+See [LICENSE](LICENSE).
 
 Copyright © 2026 goiard.
+
+---
+
+<div align="center">
+
+⭐ If you find SCOPE useful, consider giving the repository a star.
+
+</div>
