@@ -1,44 +1,61 @@
-                           
-```text                        
-  ___  ___ ___  _ __   ___ 
- / __|/ __/ _ \| '_ \ / _ \
- \__ \ (_| (_) | |_) |  __/
- |___/\___\___/| .__/ \___|
-               | |         
-               |_|         
-```
+# SCOPE
 
-A local-first student workspace designed around European school systems.
+A clean, local-first student workspace for school, study and planning.
 
-## Status: Early Development
+## What it includes
 
-- Cleaner categorized navigation
-- Inline SVG interface icons
-- Animated navigation, cards and modals
-- More compact, direct page headers
-- Redesigned onboarding with visual country/school selections
-- More dashboard statistics and study activity graph
-- Expanded analytics with focus, completion and subject performance
-- Refined light/dark themes
-- Responsive mobile navigation
-- No demo academic data on first launch
+- Dashboard with grades, exams, daily study progress and focus activity
+- Subjects with teachers and target grades
+- Weighted grade tracking
+- Upcoming exam management
+- Study-plan generation
+- Focus timer with Pomodoro, Deep Work and 52/17 modes
+- Quiz tracking
+- Analytics for focus time, completion and subject performance
+- Calendar view for exams and study sessions
+- Light and dark themes
+- Responsive desktop/mobile navigation
+- Country-aware school profiles
+- JSON export/import backups
+- No backend required — academic data stays in browser storage
 
-## Run
+## Run locally
 
-Open `index.html` in a browser.
+SCOPE is a static web app and needs no build step.
 
-For local development:
+    git clone https://github.com/goiard/scope.git
+    cd scope
+    python -m http.server 8080
 
-```bash
-python -m http.server 8080
-```
+Open http://localhost:8080.
 
-Then open `http://localhost:8080`.
+## Project structure
 
-## Storage
+    scope/
+    ├── index.html
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   └── app.js
+    └── README.md
 
-scope stores its workspace locally in browser storage. Use Settings → Export JSON for backups.
+## Data & privacy
 
-## Supported education profiles
+SCOPE stores its workspace in browser local storage. Academic data is not sent to a SCOPE backend.
 
-Germany, Austria, Italy, France, Spain, Netherlands, Poland, United Kingdom and United States, with country-aware school types, year labels and grading context.
+Use Settings → Export for a portable JSON backup and Settings → Import to restore one.
+
+## Design goals
+
+SCOPE stays dependency-light: semantic HTML, vanilla JavaScript and CSS. The interface uses restrained motion, SVG icons, responsive layouts and reduced-motion support instead of a heavy UI framework.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a focused branch.
+3. Test the static app locally.
+4. Open a pull request with a concise description.
+
+## License
+
+Add the license that matches how you want SCOPE to be distributed.
