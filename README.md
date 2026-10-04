@@ -1,21 +1,17 @@
 # SCOPE
 
-<div align="center">
-
-<img src="assets/icon.svg" width="72" alt="SCOPE icon">
-
-# SCOPE
+<div align="left">
 
 ### 🎓 A focused workspace for students
 
-**Plan school. Track progress. Study with purpose.**
+# Plan school. Track progress. Study with purpose.
+
+**A clean, local-first workspace for grades, exams, planning, focus and insights.**
 
 [![MIT License](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
 [![Vanilla JavaScript](https://img.shields.io/badge/JavaScript-vanilla-111111.svg)](#-built-with)
 [![Local First](https://img.shields.io/badge/data-local--first-111111.svg)](#-privacy-first)
 [![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-111111.svg)](#-github-pages)
-
-<br>
 
 <a href="#-features">Features</a>
 &nbsp;·&nbsp;
@@ -29,11 +25,7 @@
 
 <br>
 
-<div align="center">
-
 <img src="assets/dashboard-preview.webp" alt="SCOPE dashboard preview" width="100%">
-
-</div>
 
 ## ✨ Overview
 
