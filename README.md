@@ -1,12 +1,12 @@
                            
- ``                          
+```text                        
   ___  ___ ___  _ __   ___ 
  / __|/ __/ _ \| '_ \ / _ \
  \__ \ (_| (_) | |_) |  __/
  |___/\___\___/| .__/ \___|
                | |         
                |_|         
-``
+```
 
 A local-first student workspace designed around European school systems.
 
