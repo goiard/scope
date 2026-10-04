@@ -1,57 +1,84 @@
 # SCOPE
 
-> 🎓 A focused, local-first workspace for students to organize school, studying and progress.
-
 <div align="center">
 
-**A clean student dashboard for grades, exams, planning, focus and insights — without accounts, subscriptions or a backend.**
+<img src="assets/icon.svg" width="72" alt="SCOPE icon">
+
+# SCOPE
+
+### 🎓 A focused workspace for students
+
+**Plan school. Track progress. Study with purpose.**
+
+[![MIT License](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
+[![Vanilla JavaScript](https://img.shields.io/badge/JavaScript-vanilla-111111.svg)](#-built-with)
+[![Local First](https://img.shields.io/badge/data-local--first-111111.svg)](#-privacy-first)
+[![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-111111.svg)](#-github-pages)
+
+<br>
+
+<a href="#-features">Features</a>
+&nbsp;·&nbsp;
+<a href="#-privacy-first">Privacy</a>
+&nbsp;·&nbsp;
+<a href="#-run-locally">Run locally</a>
+&nbsp;·&nbsp;
+<a href="#-contributing">Contributing</a>
+
+</div>
+
+<br>
+
+<div align="center">
 
 <img src="assets/dashboard-preview.webp" alt="SCOPE dashboard preview" width="100%">
 
 </div>
 
-## ✨ What is SCOPE?
+## ✨ Overview
 
-SCOPE brings the parts of student life that usually live in different apps into one simple workspace.
+SCOPE brings the parts of student life that usually live across different apps into one clean workspace.
 
-It is built with semantic HTML, modern CSS and vanilla JavaScript, with academic data stored locally in your browser.
+Track grades, prepare for exams, plan study sessions, run focus timers and understand your progress — all from a lightweight browser app.
 
-### 🧩 Everything in one workspace
+**No account. No subscription. No backend. Just your workspace.**
 
-| | Feature | What it does |
+## 🧩 Features
+
+| | Feature | |
 |---|---|---|
-| 📊 | **Dashboard** | See your average, exams, study activity and today's plan at a glance |
-| 📚 | **Subjects** | Manage courses, teachers and target grades |
-| 📝 | **Grades** | Track grades and weighted averages |
-| 📅 | **Exams** | Keep upcoming assessments and difficulty in one place |
-| 🗓️ | **Planner** | Turn topics into structured study sessions |
-| ⏱️ | **Focus** | Use Pomodoro, Deep Work or 52/17 sessions |
-| 🧠 | **Quizzes** | Track practice and quiz performance |
-| 📈 | **Analytics** | Understand focus time, completion and subject performance |
-| 🗓️ | **Calendar** | View exams and planned study sessions by month |
-| 🌍 | **Profiles** | Configure country, school type and year labels |
-| 🌓 | **Themes** | Switch between light and dark modes |
-| 💾 | **Data tools** | Export, import or reset your local workspace |
+| 📊 | **Dashboard** | Your average, exams, study activity and daily plan at a glance |
+| 📚 | **Subjects** | Courses, teachers and target grades |
+| 📝 | **Grades** | Grade tracking and weighted averages |
+| 📅 | **Exams** | Upcoming assessments and difficulty |
+| 🗓️ | **Planner** | Structured study sessions around your topics |
+| ⏱️ | **Focus** | Pomodoro, Deep Work and 52/17 sessions |
+| 🧠 | **Quizzes** | Practice-set and quiz tracking |
+| 📈 | **Analytics** | Focus time, completion and subject performance |
+| 🗓️ | **Calendar** | Exams and study sessions in a monthly view |
+| 🌍 | **Profiles** | Country, school type and year settings |
+| 🌓 | **Themes** | Light and dark mode |
+| 💾 | **Data tools** | Export, import and reset your workspace |
 
 ## 🔒 Privacy first
 
-SCOPE is **local-first**.
+SCOPE is designed **local-first**.
 
-- 🔐 Your academic data stays in your browser.
+- 🔐 Academic data stays in your browser.
 - 🚫 There is no SCOPE backend collecting your data.
-- 💾 Export your workspace as JSON whenever you want.
-- ♻️ Import a previous backup to restore it.
-- ⚠️ Browser storage can still be cleared by the browser or device, so keep a backup if your data matters.
+- 💾 Export your workspace as JSON at any time.
+- ♻️ Import a backup to restore your data.
+- ⚠️ Browser storage can still be cleared, so keep a backup of important data.
 
 ## 🛠️ Built with
 
 - **HTML5** — semantic structure
 - **CSS3** — responsive UI, animations and themes
-- **Vanilla JavaScript** — application logic without a large framework
-- **localStorage** — local-first data persistence
-- **GitHub Actions** — automated GitHub Pages deployment
+- **Vanilla JavaScript** — application logic without a framework
+- **localStorage** — local-first persistence
+- **GitHub Actions** — automated static deployment
 
-No Node.js, package manager or build step is required.
+> Zero build step. Zero package manager. Zero unnecessary dependencies.
 
 ## 🚀 Run locally
 
@@ -63,7 +90,17 @@ python -m http.server 8080
 
 Then open **http://localhost:8080**.
 
-You can also open `index.html` directly, although a local HTTP server is recommended for development.
+A local HTTP server is recommended for development, although `index.html` can also be opened directly.
+
+## 🌐 GitHub Pages
+
+SCOPE includes a GitHub Actions workflow for static GitHub Pages deployment.
+
+Enable it in:
+
+**Settings → Pages → Build and deployment → Source → GitHub Actions**
+
+Once Pages is enabled, pushes to `main` deploy automatically.
 
 ## 📁 Project structure
 
@@ -85,26 +122,17 @@ scope/
 └── README.md
 ```
 
-## 🌐 GitHub Pages
+## 🎯 Design principles
 
-SCOPE is ready for static GitHub Pages hosting.
-
-The repository includes a GitHub Actions workflow that deploys the site after pushes to `main`.
-
-To enable it:
-
-**Settings → Pages → Build and deployment → Source → GitHub Actions**
-
-## 🎯 Development principles
-
-SCOPE deliberately stays dependency-light.
+SCOPE deliberately stays simple.
 
 - Keep dependencies close to zero.
-- Keep the interface clean and predictable.
-- Prefer semantic HTML and accessible controls.
-- Keep academic data local unless a future feature explicitly needs a backend.
-- Avoid unnecessary visual noise, gradients and decorative effects.
-- Keep interactions fast on lower-end devices.
+- Make important information visible immediately.
+- Prefer clean, predictable interactions.
+- Use semantic and accessible controls.
+- Keep academic data local by default.
+- Avoid unnecessary visual noise.
+- Keep the interface fast on lower-end devices.
 - Respect reduced-motion preferences.
 
 ## 🤝 Contributing
@@ -113,16 +141,14 @@ Contributions are welcome.
 
 1. Fork the repository.
 2. Create a focused branch.
-3. Make the smallest coherent change.
-4. Test locally in a current Chromium, Firefox or Safari browser.
-5. Check desktop and mobile layouts.
+3. Make a small, coherent change.
+4. Test on desktop and mobile.
+5. Check the UI in a current Chromium, Firefox or Safari browser.
 6. Open a pull request with a concise explanation.
 
 ## 📄 License
 
 SCOPE is licensed under the **MIT License**.
-
-See [LICENSE](LICENSE).
 
 Copyright © 2026 goiard.
 
@@ -130,6 +156,8 @@ Copyright © 2026 goiard.
 
 <div align="center">
 
-⭐ If you find SCOPE useful, consider giving the repository a star.
+**Built for students who want less clutter and more focus.**
+
+⭐ If you like SCOPE, consider giving the repository a star.
 
 </div>
